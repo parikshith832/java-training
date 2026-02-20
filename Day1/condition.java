@@ -1,3 +1,5 @@
+package Day1;
+
 public class condition {
     public static void main(String[] args) {
         int n = 0;

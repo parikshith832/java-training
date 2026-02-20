@@ -1,3 +1,6 @@
+
+package Day1;
+
 public class patternhard {
     public static void main(String[] args) {
 
