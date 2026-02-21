@@ -12,5 +12,4 @@ public class stud {
         s1.id = 101;
         System.out.println(s1.id);
     }
-
 }
