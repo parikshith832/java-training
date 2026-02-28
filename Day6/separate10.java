@@ -45,5 +45,16 @@ public class separate10 {// tcs
         System.out.println(Arrays.toString(res));
         ob.optimal(num);
         System.out.println("optimal " + Arrays.toString(num));
+
+        /*
+         * int index=0;
+         * for(int i=0;i<n;i++){
+         * if (arr[i]==0){
+         * res[index++]=arr[i];
+         * }}
+         * while(index<n){
+         * res[index++]=1;
+         * }
+         */
     }
 }
