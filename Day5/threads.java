@@ -17,13 +17,15 @@ public class threads {
     public static void main(String[] args) {
         MyThread ob = new MyThread();
         ob.start();
+        System.out.println("before .join Main thread");// first this
         try {
             ob.join(); // this makes the main thread as second and child as first
         } catch (Exception e) {
             System.out.println(e);
         }
+        System.out.println("State: " + ob.getState());
 
-        System.out.println("Main thread");// first this
+        System.out.println("after .join Main thread");// at last this
     }
 
 }
