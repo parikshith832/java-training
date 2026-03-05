@@ -11,8 +11,8 @@ public class seclarge {
             if (arr[i] > max) {
                 prev = max;
                 max = arr[i];
-            } else if (arr[i] > prev && arr[i] < max) {// checks whether the previous of arr[i] is greater than the old
-                                                       // previous value
+            } else if (arr[i] > prev && arr[i] < max) {// checks whether the previous of arr[i] is greater than the
+                                                       // old previous value
                 prev = arr[i];
             }
 
