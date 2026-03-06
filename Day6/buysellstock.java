@@ -20,7 +20,7 @@ public class buysellstock {// 121
         return max;
     }
 
-    public int orMaxProfit(int[] prices) {
+    public int orMaxProfit(int[] prices) {// here we buy at one day and sell at another day for only once
         int buy = Integer.MIN_VALUE;
         int sell = 0;
         for (int price : prices) {
