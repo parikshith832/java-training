@@ -15,7 +15,8 @@ public class maxarea {
             // or
             // cur = Math.min(height[left] * (right - left), height[right] * (right -
             // left));
-            max = Math.max(max, cur);
+            if (cur > max)
+                max = cur;
 
             if (height[left] < height[right]) {// Move the pointer with smaller height
                 left++;// move left to right
