@@ -1,0 +1,101 @@
+bucketsort:  only vaild for floating point numbers
+    double arr[]={0.78,0.42,0.81,0.93,0.13,0.43,0.72,0.59,0.87,0.44};
+
+radix sort: multi digit sort
+
+collection framework: Java Collection Framework (JCF) is a set of classes and interfaces that provide ready-made data structures to store and manipulate groups of objects efficiently.
+
+list interface:
+
+array list:
+ - compared to arrays, array list is dynamic
+ - fast for searchinh
+ - allows duplicate elements
+ - index based
+ methods: 
+ - add(), add(index,element)
+ - remove(index) 
+ - get(index), set(index,value)
+ - size()
+ - contains()
+ - clear()
+Arraylist <datatype> al=new Arraylist <>();
+
+linked list:
+ - singly linked list: data|next->
+ - doubly linked list: <-prev|data|next->
+ - circlular linked list
+    - singly circlular linked list
+    - doubly circlular linked list
+
+operations on linked list:
+insertion:
+ - atbegin:
+    case 1: if no head node is there
+    it creates a newnode.next as null so it can store next data
+    case 2: if head node is already present
+    it will traverse till the null node and then do the same as case 1
+
+ - atend
+ - atspecific
+deletion:
+ - atbegin
+ - atend
+ - atspecific
+traversal:
+ - for singular LL : only forward traversal is possible
+methods of LL:
+ - addfirst(), addlast()
+ - removefirst(),removelast()
+ - getfirst(),getlast()
+
+vector: similar to array list only
+ - capacity(), initially it will be always 10 
+ - ensureCapacity()
+
+stack:
+LIFO
+LDS
+
+methods:
+ - push()
+ - pop()
+ - isEmpty()
+ - top()
+
+set interface:
+ 1. hashset
+ 2. linked hashset
+ 3. treeset
+
+hashset:
+ - not allows duplicate element
+ - 
+
+map interface:
+
+linked hashmap
+treemap
+
+methods for map:
+ - put(key,value)
+ - get(key)
+ - remove(key)
+ - continous(key)
+
+queue interface:
+1. priority queue
+2. array deque
+
+types
+1. linear queue
+2. circlular queue
+3. doubly ended queue
+4. priority queue
+
+operations:
+offer() or add()
+pull()
+isEmpty()
+isfull()
+front()/ peak()
