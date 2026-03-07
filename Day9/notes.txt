@@ -74,8 +74,8 @@ hashset:
 
 map interface:
 
-linked hashmap
-treemap
+ - linked hashmap
+ - treemap
 
 methods for map:
  - put(key,value)
@@ -91,11 +91,16 @@ types
 1. linear queue
 2. circlular queue
 3. doubly ended queue
-4. priority queue
+4. priority queue (java min heap, c++  max heap)
+can be converted to max heap by Comparator.reverseOrder()
 
 operations:
-offer() or add()
-pull()
-isEmpty()
-isfull()
-front()/ peak()
+ - offer() or add()
+ - pull()
+ - isEmpty()
+ - isfull()
+ - front()/ peak()
+
+Hashing: it is the technique 
+--> JVM
+hashvalue = key % tablesize
