@@ -1,0 +1,35 @@
+10. Compare time and space complexity of Bubble, Selection, Insertion, Merge, and Quick Sort.
+
+Best sorting method is quick sort but if the pivot choice is bad it wil be the worst case.
+
+Algorithm: 
+
+Bubble Sort
+Best Time: O(n)
+Average Time: O(n²)
+Worst Time: O(n²)
+Space Complexity: O(1)
+
+Selection Sort
+Best Time: O(n²)
+Average Time: O(n²)
+Worst Time: O(n²)
+Space Complexity: O(1)
+
+Insertion Sort
+Best Time: O(n)
+Average Time: O(n²)
+Worst Time: O(n²)
+Space Complexity: O(1)
+
+Merge Sort
+Best Time: O(n log n)
+Average Time: O(n log n)
+Worst Time: O(n log n)
+Space Complexity: O(n)
+
+Quick Sort
+Best Time: O(n log n)
+Average Time: O(n log n)
+Worst Time: O(n²)
+Space Complexity: O(log n)
