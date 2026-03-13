@@ -43,8 +43,26 @@ public class list {
         head = newnode;
     }
 
+    void delete_at_end() {
+        Node temp = head;
+        if (temp == null) {
+            System.out.println("no elements present.");
+            return;
+        }
+        if (temp.next == null) {
+            head = null;
+            return;
+        }
+        while (temp.next.next != null) {
+            temp = temp.next;
+
+        }
+        temp.next = null;
+    }
+
     void display() {
         Node temp = head;
+
         while (temp != null) {
             System.out.print(temp.data + " -> ");
             temp = temp.next;
@@ -62,7 +80,14 @@ public class list {
         ob.insert_at_first(50);
         ob.insert_at_first(60);
         ob.insert_at_end(70);
-        System.out.println("Linked List:");
+        ob.delete_at_end();
+        ob.delete_at_end();
+        ob.delete_at_end();
+        ob.delete_at_end();
+        ob.delete_at_end();
+        ob.delete_at_end();
+
+        System.out.println("Linked List: ");
         ob.display();
 
     }
