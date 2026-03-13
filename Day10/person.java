@@ -2,9 +2,9 @@ package Day10;
 
 public class person {
     String name;
-    int age;
+    int age;// instance variable
 
-    public person(String name, int age) {
+    public person(String name, int age /* local variable */) {
         this.name = name;
         this.age = age;
 

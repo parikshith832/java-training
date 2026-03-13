@@ -11,7 +11,7 @@ public class findTheWinner {// 1823. Find the Winner of the Circular Game
         if (n == 1) {
             return 0;
         }
-        return (solve(n - 1, k) + k) % n;
+        return (solve(n - 1, k) + k) % n;// returns the safest index value.
     }
 
     static int find(int n, int k) {
@@ -29,8 +29,8 @@ public class findTheWinner {// 1823. Find the Winner of the Circular Game
     }
 
     public static void main(String[] args) {
-        int n = 5;
-        int k = 2;
+        int n = 7;
+        int k = 3;
         System.out.println(find(5, 2));
         findTheWinner ob = new findTheWinner();
         System.out.println(ob.findTheWinner(n, k));

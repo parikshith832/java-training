@@ -1,1 +1,7 @@
 using ArrayList with user defined classes 
+
+recursion:
+    when function calls itself
+
+backtracking: 
+    
