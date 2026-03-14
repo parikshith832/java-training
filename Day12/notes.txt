@@ -1,2 +1,7 @@
 Stacks:
     valid parentheses
+Queue
+tree:
+    a tree is a non-linear data structure used to store data in a hierarchical form.
+    root node, leaf node
+    
