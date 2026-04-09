@@ -1,0 +1,13 @@
+dfs:
+preorder: abdefcg
+inorder: dbfeacg
+postorder: dfebgca
+
+bst:
+operations in bst:
+insertion 
+searching
+deletion 
+case 1: no child nodes
+case 2: 1 child nodes
+case 3: 2 child nodes
