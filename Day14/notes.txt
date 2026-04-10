@@ -1,0 +1,4 @@
+trie:
+    non linear data structure
+    prefix tree
+    26
