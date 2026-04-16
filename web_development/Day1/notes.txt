@@ -1,0 +1,83 @@
+SDLC 
+software development life cycle
+1. waterfall model
+    BI - business intelligence
+    BI -> client -> client requirement specification
+    SRS - software requirement specification
+    CRS - client requirement specification
+    
+    requirement analysis
+        |->design
+            |->coding/information
+                |->testing (manual/automation)
+                    |->deployment
+    SEM->Git            |->maintance
+    
+Asile Model:
+n- no of smaller chunks
+1 chunks-> sprint
+
+FullStack
+    -frontend 
+        -html- to create a structure
+        -css-  to design or style the structure
+        -javascript-  to add functionality to the website
+HTML:
+berner's lee 1991
+www-world wild web
+html:structure
+http: communication
+url: addressing system
+
+        html        html3           html5
+
+html structure
+<!doctype>
+
+constant tag
+<h1> to <h6> heading tag
+<p> paragraph tag
+<span> to apply design to small portion of content
+<div>
+<center></center>
+<hr>-horizontal line
+<br> empty line breaker
+<pre></pre> same structure will be followed as typed
+<a></a> anker tag it creates hyperlink to travel from one place to different place
+
+tables in html
+<table></table> 
+<tr></tr> row
+<th></th> heading
+<td></td> data
+<caption></caption>
+<rowspan></rowspan>
+<colspan></colspan>
+
+from tag
+main container for element
+used to collect user input
+
+attributes
+action- where data sent
+method- get and post
+
+<input>
+    text - normal text
+    password - hidden text
+    radio- single selection
+    checkbox - multiselection 
+    submit- submit bulk
+<textarea>- multi line text input
+<select>- creates drop down 
+<option> - create items inside dropdown
+<button>- create clickable
+
+CSS:
+styling
+enhance the look and feel of the webpage
+ensures connectability accross multiple page
+allow separation and content html and css
+advantages of css:
+reduces repeation reusing styles
+makes website responsive and mobile friendly
