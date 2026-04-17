@@ -13,7 +13,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 260px 1fr 280px;
-    height: 98.1vh;
+    height: 100vh;
 }
 
 /*sidebar*/
@@ -144,13 +144,11 @@ body {
 
 .yellow {
     background: #f9b000;
-    border-radius: 12px;
 
 }
 
 .redl {
     background: rgb(245, 61, 61);
-    border-radius: 12px;
 }
 
 /*right sidebar*/
@@ -233,6 +231,37 @@ body {
 
 .red {
     background: red;
+}
+
+.graph img {
+    display: grid;
+    width: 200px;
+    height: 150px;
+    border-top: 10px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.small {
+    flex: 1;
+    background: white;
+    padding: 10px;
+    width: 100px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+.progress img {
+    display: grid;
+    width: 70px;
+    height: 70px;
+    zoom: 10px;
+    margin-top: 50px;
+    margin-left: 100px;
+    object-position: left;
+    object-fit: cover;
+    border-radius: 100%;
+
 }
 
 @media(max-width:900px) {

@@ -108,3 +108,93 @@ animation properties:
 
 important:
 animation can run automatically without user action
+
+=========================================================================================
+
+JavaScript:
+
+javascript:
+programming language used to add functionality to webpages
+runs on browser
+
+features:
+1. lightweight
+2. interpreted language
+3. event-driven
+4. supports object-oriented programming
+
+ways to add javascript:
+1. inline -> inside html tag
+2. internal -> inside <script> tag
+3. external -> separate .js file
+
+example:
+<script>
+    console.log("hello world");
+</script>
+
+variables:
+used to store data
+
+types of variables:
+1. var
+2. let
+3. const
+
+var:
+- function scoped
+- can be redeclared and updated
+
+let:
+- block scoped
+- cannot be redeclared but can be updated
+
+const:
+- block scoped
+- cannot be redeclared or updated
+
+data types:
+1. number
+2. string
+3. boolean
+4. null
+5. undefined
+6. object
+7. array
+
+example:
+let a = 10;
+let name = "abc";
+let isTrue = true;
+
+Operators:
+
+1. arithmetic operators:
++  -> addition
+-  -> subtraction
+*  -> multiplication
+/  -> division
+%  -> modulus
+** -> exponent
+
+2. assignment operators:
+=   -> assign
++=  -> add and assign
+-=  -> subtract and assign
+*=  -> multiply and assign
+/=  -> divide and assign
+
+3. comparison operators:
+==  -> equal (value)
+=== -> equal (value and type)
+!=  -> not equal
+!== -> not equal (value and type)
+>   -> greater than
+<   -> less than
+>=  -> greater than or equal
+<=  -> less than or equal
+
+4. logical operators:
+&& -> and
+|| -> or
+!  -> not
