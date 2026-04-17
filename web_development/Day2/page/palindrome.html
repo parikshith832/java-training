@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Palindrome</h2>
+    <script>
+      function pali() {
+        let num = prompt("Enter the number: ");
+        let reversed = num.split("").reverse().join("");
+
+        if (num === reversed) {
+          return "Palindrome";
+        } else {
+          return "Not Palindrome";
+        }
+      }
+
+      document.write("Result: " + pali());
+    </script>
+  </body>
+</html>

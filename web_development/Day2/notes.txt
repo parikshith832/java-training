@@ -109,6 +109,33 @@ animation properties:
 important:
 animation can run automatically without user action
 
+box model:
+content -> actual content
+padding -> space inside border
+border -> boundary
+margin -> space outside
+
+display property:
+block -> takes full width
+inline -> takes required width
+inline-block -> mix of both
+none -> hides element
+
+position property:
+static -> default
+relative -> relative to itself
+absolute -> relative to parent
+fixed -> fixed on screen
+sticky -> sticks while scrolling
+
+z-index:
+controls stack order of elements
+higher value -> appears on top
+
+overflow:
+hidden -> hide extra content
+scroll -> add scroll
+auto -> scroll if needed
 =========================================================================================
 
 JavaScript:
@@ -198,3 +225,166 @@ Operators:
 && -> and
 || -> or
 !  -> not
+
+5. Bitwise:
+|-or
+&- and
+^- xor
+~- not
+
+input and output:
+console.log() -> print output in console
+alert() -> show popup message
+prompt() -> take input from user
+
+example:
+let name = prompt("enter name");
+console.log(name);
+
+type conversion:
+Number() -> convert to number
+String() -> convert to string
+Boolean() -> convert to boolean
+
+example:
+let a = "10";
+let num = Number(a);
+
+typeof operator:
+used to check data type
+
+example:
+typeof 10 -> number
+typeof "abc" -> string
+
+increment and decrement:
+++ -> increase by 1
+-- -> decrease by 1
+
+example:
+let a = 5;
+a++; -> 6
+a--; -> 5
+
+ternary operator:
+condition ? true_value : false_value
+
+example:
+let age = 18;
+(age >= 18) ? "adult" : "minor";
+
+conditional statements:
+used to make decisions based on conditions
+
+1. if statement:
+executes block only if condition is true
+
+syntax:
+if (condition) {
+    code
+}
+
+2. if-else statement:
+executes one block if condition is true and another if false
+
+syntax:
+if (condition) {
+    code
+} else {
+    code
+}
+
+3. else if ladder:
+used to check multiple conditions
+
+syntax:
+if (condition1) {
+    code
+} else if (condition2) {
+    code
+} else {
+    code
+}
+
+4. nested if:
+if statement inside another if statement
+
+syntax:
+if (condition1) {
+    if (condition2) {
+        code
+    }
+}
+
+5. switch statement:
+used to select one block from multiple options
+
+syntax:
+switch (expression) {
+    case value1:
+        code;
+        break;
+    case value2:
+        code;
+        break;
+    default:
+        code;
+}looping statements:
+used to execute a block of code multiple times
+
+1. for loop:
+used when number of iterations is known
+
+syntax:
+for (initialization; condition; increment/decrement) {
+    code
+}
+
+2. while loop:
+executes code while condition is true
+
+syntax:
+while (condition) {
+    code
+}
+
+3. do while loop:
+executes code at least once, then checks condition
+
+syntax:
+do {
+    code
+} while (condition)
+
+
+arrays:
+used to store multiple values in a single variable
+
+array operations:
+1. push() -> adds element at end
+2. pop() -> removes element from end
+3. shift() -> removes element from beginning
+4. unshift() -> adds element at beginning
+5. forEach() -> iterates through array
+6. map() -> creates new array by modifying elements
+7. filter() -> filters elements based on condition
+8. reduce() -> reduces array to single value
+9. sort() -> sorts array
+10. reverse() -> reverses array
+11. concat() -> merges arrays
+12. slice() -> returns portion of array
+13. splice() -> add/remove elements in array
+14. indexOf() -> returns index of element
+15. lastIndexOf() -> returns last index
+16. includes() -> checks if element exists
+17. find() -> returns first matching element
+18. findIndex() -> returns index of matching element
+19. every() -> checks if all elements satisfy condition
+20. some() -> checks if at least one element satisfies
+21. join() -> converts array to string
+22. toString() -> converts array to string
+23. flat() -> flattens nested arrays
+24. fill() -> fills array with static value
+25. copyWithin() -> copies part of array within itself
+
+__ahs

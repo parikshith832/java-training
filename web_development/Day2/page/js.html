@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci</title>
+  </head>
+
+  <body>
+    <h2>Function to display addition of 2 numbers</h2>
+
+    <script>
+      // Addition function
+      const add = (a, b) => a + b;
+      document.write("Addition: " + add(5, 10) + "<br><br>");
+
+      // Fibonacci function
+      function fib() {
+        let n = Number(prompt("Enter the value of n:"));
+
+        if (n <= 0) {
+          return "Enter a valid number";
+        }
+
+        let a = 0,
+          b = 1;
+        let output = "";
+
+        for (let i = 1; i <= n; i++) {
+          output += a + " "; // store all values
+          let next = a + b;
+          a = b;
+          b = next;
+        }
+
+        return output; // return result
+      }
+
+      document.write("Fibonacci Series: " + fib());
+    </script>
+  </body>
+</html>
