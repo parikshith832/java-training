@@ -1,0 +1,110 @@
+DAY 2
+
+flexbox:
+one dimensional layout used to design flexible layout
+it arranges items in rows or columns
+
+important properties:
+1. display: flex;
+2. flex-direction -> row, column, row-reverse, column-reverse
+3. flex-wrap -> wrap, nowrap, wrap-reverse
+4. gap -> space between items
+
+advantages:
+1. simple to design layout
+2. aligns items easily
+3. distributes space dynamically
+
+align-content:
+1. flex-start
+2. flex-end
+3. center
+4. stretch
+5. space-between
+6. space-around
+
+align-items:
+1. flex-start
+2. flex-end
+3. center
+4. stretch
+5. baseline
+
+justify-content:
+1. flex-start
+2. flex-end
+3. center
+4. space-between
+5. space-around
+6. space-evenly
+
+flex item properties:
+1. flex-grow
+2. flex-shrink
+3. flex-basis
+4. align-self
+
+responsive layout:
+1. fluid grid
+2. media queries
+3. responsive units
+
+media queries:
+- used to change design based on screen size
+- changes layout and theme
+
+syntax:
+@media (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+units in responsive design:
+1. %  -> relative to parent element
+2. em -> relative to parent font size
+3. rem -> relative to root font size
+4. vw -> viewport width
+5. vh -> viewport height
+
+mobile first approach:
+application -> websites, webpages
+mobile size -> 480px
+flow -> mobile -> tablet -> desktop
+
+desktop first approach:
+flow -> desktop -> tablet -> mobile
+example sizes -> 1080px -> 780px -> 480px
+
+animation:
+transition-property -> background-color
+transition-duration
+transition-timing-function
+transition-delay
+
+important:
+transition applies only when state changes (hover, click)
+
+example:
+button:hover {
+    background-color: red;
+}
+
+keyframe animation:
+@keyframes name {
+    0% { background-color: red; }
+    50% { background-color: yellow; }
+    100% { background-color: green; }
+}
+
+animation properties:
+1. animation-name -> @keyframes name
+2. animation-duration
+3. animation-iteration-count
+4. animation-direction
+   normal
+   reverse
+   alternate
+
+important:
+animation can run automatically without user action
