@@ -11,16 +11,26 @@
     <!--Register Page-->
     <div id="registerPage" class="page active glass">
       <h1>Register</h1>
-      <input type="text" id="regUsername" placeholder="Username" />
-      <input type="password" id="regPassword" placeholder="Password" />
-      <button onclick="register()">Register</button>
+      <input class="input" type="text" id="regUser" placeholder="Username" />
+      <input
+        class="input"
+        type="password"
+        id="regPass"
+        placeholder="Password"
+      />
+      <button class="button" onclick="register()">Register</button>
     </div>
     <!--Login Page-->
     <div id="LoginPage" class="page glass">
       <h1>Login</h1>
-      <input type="text" id="loginUser" placeholder="Username" />
-      <input type="password" id="loginPass" placeholder="Password" />
-      <button onclick="login()">login</button>
+      <input class="input" type="text" id="loginUser" placeholder="Username" />
+      <input
+        class="input"
+        type="password"
+        id="loginPass"
+        placeholder="Password"
+      />
+      <button class="button" onclick="login()">login</button>
     </div>
     <!--quiz page-->
     <div id="quizPage" class="page">
@@ -46,6 +56,6 @@
       <h2 id="score"></h2>
       <button onclick="restart()">Restart</button>
     </div>
-    <script src="script.js" ;></script>
+    <script src="script.js"></script>
   </body>
 </html>
