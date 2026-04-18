@@ -47,3 +47,23 @@ addEventListener()
 
 syntax:
 element.addEventListener("event", function)
+
+
+project:
+quiz applications 
+register page
+    name
+    password
+login page
+    name
+    password
+quiz page
+question 1 ____
+a
+b
+c
+d
+with timer
+green means correct
+red means wrong
+total score

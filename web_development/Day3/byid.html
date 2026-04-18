@@ -151,6 +151,7 @@
       alt=""
       width="300"
     />
+    <br />
     <button onclick="nextImage()">Next Image</button>
     <script>
       let images = [
@@ -163,6 +164,64 @@
       function nextImage() {
         index = (index + 1) % images.length;
         document.getElementById("slider").src = images[index];
+      }
+    </script>
+    <br />
+    <br />
+    <input type="text" id="inputtext" />
+    <button onclick="saveData()">Save</button>
+    <button onclick="loadData()">Load</button>
+    <p id="saveData"></p>
+    <script>
+      function saveData() {
+        localStorage.setItem(
+          "text",
+          document.getElementById("inputtext").value,
+        );
+      }
+      function loadData() {
+        document.getElementById("saveData").innerText =
+          localStorage.getItem("text");
+      }
+    </script>
+    <div id="dragItem" draggable="true" ondragstart="drag(event)">Drag Me</div>
+    <br />
+    <div
+      id="dragzone"
+      ondragover="allowDrop(event)"
+      ondrop="drop(event)"
+      style="width: 200px; height: 100px; border: 2px dashed"
+    >
+      Drop Here!
+    </div>
+    <script>
+      function drag(event) {
+        event.dataTransfer.setData("text", event.target.id);
+      }
+      function allowDrop(event) {
+        event.preventDefault();
+      }
+      function drop(event) {
+        event.preventDefault();
+        let data = event.dataTransfer.getData("text");
+        event.target.appendChild(document.getElementById(data));
+      }
+    </script>
+    <br />
+    <hr />
+    <button onclick="Getlocation()">Get Location</button>
+    <p id="Locator"></p>
+    <script>
+      function Getlocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition((pos) => {
+            document.getElementById("Locator").innerText =
+              "Latitude: " +
+              pos.coords.latitude +
+              " | Longitute: " +
+              pos.coords.longitude;
+          });
+        }
       }
     </script>
   </body>
