@@ -1,0 +1,49 @@
+DOM manipulation:
+used to access and modify HTML elements using javascript
+
+selecting elements:
+1. getElementById()
+2. getElementsByClassName()
+3. getElementsByTagName()
+4. querySelector()
+5. querySelectorAll()
+
+modifying elements:
+1. innerHTML -> change HTML content
+2. innerText -> change text content
+3. textContent -> change text
+
+attributes:
+1. getAttribute()
+2. setAttribute()
+3. removeAttribute()
+
+styling:
+element.style.property = value
+
+example:
+element.style.color = "red";
+
+class manipulation:
+1. classList.add()
+2. classList.remove()
+3. classList.toggle()
+4. classList.contains()
+
+creating elements:
+1. createElement()
+2. appendChild()
+3. removeChild()
+
+events:
+1. onclick
+2. onmouseover
+3. onmouseout
+4. onsubmit
+5. onload
+
+event listener:
+addEventListener()
+
+syntax:
+element.addEventListener("event", function)

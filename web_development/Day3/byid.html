@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="main-heading">Hello World</h1>
+    <script>
+      let heading = document.getElementById("main-heading");
+      console.log(heading);
+      heading.style.color = "blue";
+    </script>
+    <ul>
+      <li class="list-item">item 1</li>
+      <li class="list-item">item 2</li>
+      <li class="list-item">item 3</li>
+    </ul>
+    <script>
+      let items = document.getElementsByClassName("list-item");
+      for (let i = 0; i < items.length; i++) {
+        items[i].style.color = "red";
+      }
+    </script>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <script>
+      let ele = document.getElementsByTagName("p");
+      for (let i = 0; i < ele.length; i++) {
+        ele[i].style.color = "green";
+      }
+    </script>
+    <ul>
+      <li class="list-items">item 4</li>
+      <li class="list-items">item 5</li>
+      <li class="list-items">item 6</li>
+    </ul>
+    <script>
+      let first = document.querySelector(".list-items");
+      first.style.color = "brown";
+      let all = document.querySelectorAll(".list-items");
+      all.forEach((item) => {
+        item.style.backgroundColor = "yellow";
+      });
+    </script>
+    <p id="demo">Hello, World</p>
+    <button onclick="changetext()">Click Me</button>
+    <script>
+      function changetext() {
+        document.getElementById("demo").innerText = "welcome";
+      }
+    </script>
+    <ul id="list"></ul>
+    <button onclick="additem()">Add List Item</button><br />
+    <script>
+      function additem() {
+        let list = document.createElement("li");
+        list.innerText = "new item";
+        let li = document.getElementById("list").appendChild(list);
+      }
+    </script>
+
+    <div id="box" style="width: 100px; height: 100px; background: red"></div>
+    <br />
+    <button onclick="toggleBox()">Toggle</button>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script>
+      function toggleBox() {
+        document.getElementById("box").classList.toggle("hidden");
+      }
+    </script>
+    <br />
+    <hr />
+    <form onsubmit="return validationForm();">
+      <input type="text" id="name" />
+      <button type="submit">submit</button>
+    </form>
+    <script>
+      function validationForm() {
+        let name = document.getElementById("name").value;
+        if (name === "") {
+          alert("please enter your name");
+          return false;
+        }
+      }
+    </script>
+    <br />
+    <input type="password" id="password" />
+    <button onclick="togglePassword()">Flash</button>
+    <script>
+      function togglePassword() {
+        let input = document.getElementById("password");
+        input.type = input.type === "password" ? "text" : "password";
+      }
+    </script>
+    <hr />
+    <button onclick="fetchData()">Get Data</button>
+    <p id="output"></p>
+    <script>
+      function fetchData() {
+        fetch("https://jsonplaceholder.typicode.com/todos/1")
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            document.getElementById("output").innerText = data.title;
+          });
+      }
+    </script>
+    <p id="timer">10</p>
+    <script>
+      let count = 10;
+      let interval = setInterval(() => {
+        document.getElementById("timer").innerText = count;
+        count--;
+        if (count < 0) {
+          clearInterval(interval);
+          document.getElementById("timer").innerText = "get out";
+        }
+      }, 1000);
+    </script>
+    <button onclick="startChange()">Start</button>
+    <button onclick="stopChange()">Stop</button>
+
+    <script>
+      let intervalId;
+
+      function startChange() {
+        if (!intervalId) {
+          intervalId = setInterval(() => {
+            let color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+            document.body.style.backgroundColor = color;
+          }, 1000);
+        }
+      }
+
+      function stopChange() {
+        clearInterval(intervalId);
+        intervalId = null;
+      }
+    </script>
+    <br /><br />
+    <img
+      id="slider"
+      src="https://media.tenor.com/_zWYqfZdneIAAAAM/shocked-face-shocked-meme.gif"
+      alt=""
+      width="300"
+    />
+    <button onclick="nextImage()">Next Image</button>
+    <script>
+      let images = [
+        "https://i.imgflip.com/7f9vxf.jpg",
+        "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/16620/production/_91408619_55df76d5-2245-41c1-8031-07a4da3f313f.jpg",
+      ];
+
+      let index = 0;
+
+      function nextImage() {
+        index = (index + 1) % images.length;
+        document.getElementById("slider").src = images[index];
+      }
+    </script>
+  </body>
+</html>
