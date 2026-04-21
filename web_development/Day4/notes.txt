@@ -1,0 +1,5 @@
+JavaScript:
+synchronous
+asynchronous
+    promise 
+    async/await

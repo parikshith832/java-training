@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Async Demo</h2>
+    <button onclick="runAsync()">Run Async</button>
+    <p id="output"></p>
+    <script>
+      function delayTask() {
+        return new Promise(function (resolve) {
+          setTimeout(function () {
+            resolve("task completed");
+          }, 2000);
+        });
+      }
+      async function runAsync() {
+        let result = await delayTask();
+        document.getElementById("output").innerText = result;
+      }
+    </script>
+  </body>
+</html>
