@@ -1,5 +1,127 @@
+DAY 4
+
 JavaScript:
-synchronous
-asynchronous
-    promise 
-    async/await
+
+asynchronous:
+used to execute tasks without blocking main program
+
+1. promise:
+object that represents future result of asynchronous operation
+
+states:
+1. pending -> initial state
+2. fulfilled/resolved -> operation successful
+3. rejected -> operation failed
+
+syntax:
+let promise = new Promise(function(resolve, reject) {
+    // code
+});
+
+methods:
+1. then() -> runs when resolved
+2. catch() -> runs when rejected
+3. finally() -> runs always
+
+example:
+promise.then().catch();
+
+2. async/await:
+modern way to handle asynchronous operations
+
+async:
+makes function return a promise
+
+await:
+waits for promise to resolve
+
+syntax:
+async function name() {
+    let result = await promise;
+}
+
+important:
+async/await makes code look synchronous
+
+
+timers:
+used to execute code after some time
+
+1. setTimeout() -> runs once after delay
+2. setInterval() -> runs repeatedly
+
+syntax:
+setTimeout(function, time)
+setInterval(function, time)
+
+clear functions:
+clearTimeout()
+clearInterval()
+
+
+error handling:
+used to handle runtime errors
+
+syntax:
+try {
+    code
+} catch (error) {
+    code
+} finally {
+    code
+}
+
+throw:
+used to create custom error
+
+
+JSON:
+javascript object notation
+used to store and transfer data
+
+methods:
+1. JSON.stringify() -> object to string
+2. JSON.parse() -> string to object
+
+
+local storage:
+used to store data in browser
+
+methods:
+1. localStorage.setItem(key, value)
+2. localStorage.getItem(key)
+3. localStorage.removeItem(key)
+4. localStorage.clear()
+
+
+functions (important recap):
+1. function declaration
+function name() {
+    code
+}
+
+2. function expression
+let name = function() {
+    code
+}
+
+3. arrow function
+let name = () => {
+    code
+}
+
+
+ES6 features:
+1. let and const
+2. arrow functions
+3. template literals -> `hello ${name}`
+4. destructuring
+5. spread operator -> ...
+6. default parameters
+
+
+important:
+javascript is single threaded but handles async using event loop
+
+======================================================================
+SQL:
