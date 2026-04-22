@@ -1,0 +1,85 @@
+INSTAGRAM SQL PROJECT – SETUP QUESTIONS
+🧱 PART 1: DATABASE CREATION
+Create a database named instagram_db.
+Select (use) the database.
+📊 PART 2: TABLE CREATION QUESTIONS
+
+Create the following tables with proper constraints:
+
+👤 USERS TABLE
+Create a table users with columns:
+user_id (Primary Key, Auto Increment)
+username (Unique)
+email (Unique)
+password
+created_at (default current timestamp)
+📸 POSTS TABLE
+Create a table posts with columns:
+post_id (Primary Key, Auto Increment)
+user_id (Foreign Key)
+image_url
+caption
+created_at
+❤️ LIKES TABLE
+Create a table likes with:
+like_id (Primary Key, Auto Increment)
+user_id (Foreign Key)
+post_id (Foreign Key)
+💬 COMMENTS TABLE
+Create a table comments with:
+comment_id (Primary Key, Auto Increment)
+user_id (Foreign Key)
+post_id (Foreign Key)
+comment
+created_at
+🔁 FOLLOWERS TABLE
+Create a table followers with:
+follower_id
+following_id
+Composite Primary Key (follower_id, following_id)
+📥 PART 3: INSERT DATA QUESTIONS
+
+Now students should insert data manually 👇
+
+👤 USERS DATA
+Insert at least 5 users with different usernames and emails.
+
+Example requirement:
+
+One user named Rahul
+One user named Sneha
+One user named Amit
+One user named Priya
+One more of your choice
+📸 POSTS DATA
+Insert at least 8 posts:
+Each user should have at least one post
+Some users should have multiple posts
+❤️ LIKES DATA
+Insert likes such that:
+Each post has at least 1 like
+Some posts have multiple likes
+Some users like multiple posts
+💬 COMMENTS DATA
+Insert comments such that:
+Each post has at least one comment
+Some posts have multiple comments
+Comments should come from different users
+🔁 FOLLOWERS DATA
+Insert follower relationships:
+Each user should follow at least one user
+Some users should have multiple followers
+Include mutual following (A follows B and B follows A)
+🔍 PART 4: VERIFICATION QUESTIONS
+Display all users.
+Display all posts.
+Display all likes.
+Display all comments.
+Display all followers.
+🎯 PART 5: START QUERY PRACTICE
+
+After completing above, then solve:
+
+Show all posts with username
+Count likes per post
+Find most followed user
