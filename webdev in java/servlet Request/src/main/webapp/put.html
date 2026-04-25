@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Put_Request</title>
+</head>
+<body>
+
+<h2>Put Form</h2>
+
+<input type="text" id="name" placeholder="Enter your name">
+<button onclick="sendPut()">Send PUT</button>
+
+<script>
+function sendPut() {
+
+    fetch("putDemo", {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: "username=" + document.getElementById("name").value
+    })
+    .then(res => res.text())
+    .then(data => alert(data));
+}
+</script>
+
+</body>
+</html>

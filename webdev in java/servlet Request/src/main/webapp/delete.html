@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delete_Request</title>
+</head>
+<body>
+
+<h2>Delete Form</h2>
+
+<input type="text" id="name" placeholder="Enter your name">
+<button onclick="sendDelete()">Send DELETE</button>
+
+<script>
+function sendDelete() {
+    let name = document.getElementById("name").value;
+
+    fetch("deleteDemo", {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: "username=" + document.getElementById("name").value
+    })
+    .then(res => res.text())
+    .then(data => alert(data));
+}
+</script>
+
+</body>
+</html>
