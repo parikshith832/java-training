@@ -31,7 +31,9 @@ public class InnerEngine {
         /*
          * spring-> spring creates object and it will manage lifecycle
          * IOC-> inversion of control
-         * control of object creation moves from program to spring
+         * ->control of object creation moves from program to spring
+         * DI-> Dependancy injection
+         * instead of creating dependency on your spring automatically injects it
          */
     }
 }
