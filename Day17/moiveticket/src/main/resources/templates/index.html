@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Movie Ticket Booking</title>
+</head>
+
+<body>
+
+<h2>Movie Ticket Booking System</h2>
+
+<a href="/add">Book Ticket</a>
+
+<br><br>
+
+<table border="1">
+
+    <tr>
+
+        <th>ID</th>
+
+        <th>Movie</th>
+
+        <th>Customer</th>
+
+        <th>Seat</th>
+
+        <th>Action</th>
+
+    </tr>
+
+    <tr th:each="m : ${movies}">
+
+        <td th:text="${m.id}"></td>
+
+        <td th:text="${m.movieName}"></td>
+
+        <td th:text="${m.customerName}"></td>
+
+        <td th:text="${m.seatNumber}"></td>
+
+        <td>
+
+            <a th:href="@{/delete/{id}(id=${m.id})}">Delete</a>
+
+        </td>
+
+    </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Ticket</title>
+</head>
+
+<body>
+
+<h2>Book Movie Ticket</h2>
+
+<form th:action="@{/save}" th:object="${movie}" method="post">
+
+    Movie Name
+
+    <input type="text" th:field="*{movieName}">
+
+    <br><br>
+
+    Customer Name
+
+    <input type="text" th:field="*{customerName}">
+
+    <br><br>
+
+    Seat Number
+
+    <input type="number" th:field="*{seatNumber}">
+
+    <br><br>
+
+    <button type="submit">
+
+        Book Ticket
+
+    </button>
+
+</form>
+
+<br>
+
+<a href="/">Back</a>
+
+</body>
+</html>
